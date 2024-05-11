@@ -1,0 +1,20 @@
+server:
+  port: 8044
+spring:
+  application:
+    name: jzuul
+  profiles:
+    active: default
+
+
+# eureka 配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://lsc:123456@localhost:8088/eureka/
+  instance:
+    instance-id: jzuul #修改Eureka上的默认描述信息
+zuul:
+  routes:
+    provider:
+      path: /user11/**

@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  servlet:
+    context-path:
+spring:
+  application:
+    name: provider-user
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lsc:123456@localhost:8088/eureka
+    instance:
+      instance-id: j-provider2
+logging:
+  level:
+    root: INFO

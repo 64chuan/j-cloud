@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>untitled</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>j-cloud</name>
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>2021.0.4</spring-cloud.version>
+        <lombok.version>1.16.20</lombok.version>
+    </properties>
+
+    <modules>
+        <module>j-eureka</module>
+        <module>j-provider1</module>
+        <module>j-consumer</module>
+        <module>j-provider2</module>
+        <module>j-consumer-feign</module>
+        <module>j-hystrix</module>
+        <module>jzuul</module>
+        <module>j-config-server</module>
+    </modules>
+</project>

@@ -1,0 +1,3 @@
+org\example\ConfigApplication.class
+org\example\controller\ConfigController.class
+org\example\entity\Product.class

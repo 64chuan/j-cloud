@@ -1,0 +1,3 @@
+com\example\FeignApplication.class
+com\example\service\IFeignClient.class
+com\example\controller\FeignController.class

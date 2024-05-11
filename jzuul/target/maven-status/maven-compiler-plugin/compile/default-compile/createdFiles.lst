@@ -1,0 +1,3 @@
+org\example\ZuulApplication.class
+org\example\config\ZuulConfig.class
+org\example\filter\MyFileter.class

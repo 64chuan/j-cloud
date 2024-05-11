@@ -1,0 +1,3 @@
+com\example\controller\HystrixController.class
+com\example\service\HystrixService.class
+com\example\HystrixApplication.class

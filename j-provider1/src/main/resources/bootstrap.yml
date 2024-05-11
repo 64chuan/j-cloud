@@ -1,0 +1,25 @@
+server:
+  port: 8777
+
+spring:
+  #profiles:
+  #  active: dev
+  application:
+    name: provider-user
+#  cloud:
+#    config:
+#      #profile: dev
+#      name: application
+#      uri: http://configserver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lsc:123456@eurekadocker:8088/eureka
+    instance:
+      instance-id: j-provider1
+logging:
+  level:
+    root: INFO
+
+

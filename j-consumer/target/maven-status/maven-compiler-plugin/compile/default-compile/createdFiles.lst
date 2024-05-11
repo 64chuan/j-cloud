@@ -1,0 +1,3 @@
+org\example\ConsumerApplication.class
+org\example\controller\ConsumerController.class
+org\example\config\RestTemplateConfig.class

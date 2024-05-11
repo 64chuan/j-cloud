@@ -1,0 +1,11 @@
+server:
+  port: 8877
+
+# 配合spring-boot-starter-actuator，显示服务信息
+management:
+  endpoint:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"

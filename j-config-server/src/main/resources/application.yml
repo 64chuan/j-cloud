@@ -1,0 +1,37 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:/GIT/respo/repos
+# 配置存储在git，git链接
+#        git:
+#          uri: https://github.com/64chuan/repos
+#          username: 64chuan
+#          password: liuchuan64?
+#          force-pull: true
+#      label: master
+
+# 配合spring-boot-starter-actuator，显示服务信息
+management:
+  endpoint:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+
+# 服务注册到Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lsc:123456@localhost:8088/eureka
+
+
+
