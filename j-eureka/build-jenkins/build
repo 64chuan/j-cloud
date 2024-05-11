@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#进入脚本所在目录，然后返回项目根目录
+scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $scriptPath
+cd ../../
+
+#Docker容器基本信息
+appHome="D:\IdeaProjects\untitled\j-eureka\target"
+dockerName="j-eureka"
+dockerPort="8088"
+dockerJarVolumn="${appHome}/${dockerName }"
+#编译打包
+mvn clean package
+#将Jar 包复制到目录下
+outputPath="${scriptPath}/${dockerName}";
+if [-d ${outputPath}]; then
+  rm -rf ${outputPath}
+fi
+mkdir ${outputPath} && mkdir ${outputPath}/jar
+cp ./target/*.jar ${outputPath}/jar/app.jar
+# 将整个目录复制到应用目录中
+cd ${scriptPath}
+cp -rf ${outputPath} ${appHome}/
+#停止删除现有容器
+echo "停止删除容器:${dockerName}"
+docker stop ${dockerName}&& docker rm ${dockerName}
+#Docker容器运行命令
+echo "运行容器"
+docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}/jar:/jar microserv/openjdk:1.0.0
