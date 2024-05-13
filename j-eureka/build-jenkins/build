@@ -16,7 +16,7 @@ dockerJarVolumn="${appHome}/${dockerName }"
 
 #将Jar 包复制到目录下
 outputPath="${scriptPath}/${dockerName}";
-if exist ${outputPath(
+if exist ${outputPath}(
   rm -rf ${outputPath}
 )
 mkdir ${outputPath} && mkdir ${outputPath}/jar
