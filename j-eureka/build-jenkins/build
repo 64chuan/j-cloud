@@ -29,6 +29,6 @@ echo "停止删除容器:${dockerName}"
 docker stop ${dockerName}&& docker rm ${dockerName}
 #Docker容器运行命令
 echo "运行容器"
-docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}.jar:/jar microserv/openjdk:1.0.0
+docker run --name=j-eureka-2.7.4 -d -p 8088:8088 -v --network my-network /var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/target/j-eureka-2.7.4.jar:/jar microserv/openjdk:1.0.0
 
 exit 0
