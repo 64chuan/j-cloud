@@ -5,13 +5,14 @@ scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $scriptPath
 cd ../../
 
+echo "脚本所在目录:${scriptPath}"
+
 #Docker容器基本信息
-appHome="D:\IdeaProjects\untitled\j-eureka\target"
+appHome="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/target"
 dockerName="j-eureka"
 dockerPort="8088"
 dockerJarVolumn="${appHome}/${dockerName }"
-#编译打包
-mvn clean package
+
 #将Jar 包复制到目录下
 outputPath="${scriptPath}/${dockerName}";
 if [-d ${outputPath}]; then
@@ -27,6 +28,6 @@ echo "停止删除容器:${dockerName}"
 docker stop ${dockerName}&& docker rm ${dockerName}
 #Docker容器运行命令
 echo "运行容器"
-docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}/jar:/jar microserv/openjdk:1.0.0
+docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}.jar:/jar microserv/openjdk:1.0.0
 
 exit 0
