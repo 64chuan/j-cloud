@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #进入脚本所在目录，然后返回项目根目录
-scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+scriptPath="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/build-jenkins/"
 cd $scriptPath
 cd ../../
 
@@ -9,7 +10,7 @@ echo "脚本所在目录:${scriptPath}"
 
 #Docker容器基本信息
 appHome="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/target"
-dockerName="j-eureka"
+dockerName="j-eureka-2.7.4"
 dockerPort="8088"
 dockerJarVolumn="${appHome}/${dockerName }"
 
