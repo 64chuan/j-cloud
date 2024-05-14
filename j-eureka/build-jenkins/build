@@ -19,9 +19,7 @@ outputPath="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/build-jenkins
 #if [-d ${outputPath}]; then
 #  rm -rf ${outputPath}
 #fi
-if exist ${outputPath} (
-  rm -rf ${outputPath}
-)
+if exist ${outputPath}  rm -rf ${outputPath}
 
 mkdir ${outputPath} && mkdir ${outputPath}/jar
 cp ./j-eureka/target/*.jar ${outputPath}/jar/app.jar
