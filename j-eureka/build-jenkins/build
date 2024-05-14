@@ -4,7 +4,7 @@
 #scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 scriptPath="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/build-jenkins/"
 cd $scriptPath
-cd ../
+cd ../../
 
 echo "脚本所在目录:${scriptPath}"
 
@@ -20,7 +20,7 @@ if [-d ${outputPath}]; then
   rm -rf ${outputPath}
 fi
 mkdir ${outputPath} && mkdir ${outputPath}/jar
-cp ./target/*.jar ${outputPath}/jar/app.jar
+cp ./../target/*.jar ${outputPath}/jar/app.jar
 # 将整个目录复制到应用目录中
 cd ${scriptPath}
 cp -rf ${outputPath} ${appHome}/
