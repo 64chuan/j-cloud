@@ -29,8 +29,8 @@ cp -rf ${outputPath} ${appHome}/
 #停止删除现有容器
 echo "停止删除容器:${dockerName}"
 
-#docker stop ${dockerName}&& docker rm ${dockerName}
+docker stop ${dockerName}&& docker rm ${dockerName}
 #Docker容器运行命令
 echo "运行容器"
-#docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}/jar:/jar microserv/openjdk:1.0.0
+docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}/jar:/jar microserv/openjdk:1.0.0
 
