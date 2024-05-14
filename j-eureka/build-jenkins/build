@@ -12,23 +12,27 @@ echo "脚本所在目录:${scriptPath}"
 appHome="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/target"
 dockerName="j-eureka-2.7.4"
 dockerPort="8088"
-dockerJarVolumn="${appHome}/${dockerName }"
+dockerJarVolumn="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/target/j-eureka-2.7.4"
 
 #将Jar 包复制到目录下
-outputPath="${scriptPath}/${dockerName}";
-if [-d ${outputPath}]; then
+outputPath="/var/jenkins_home/jobs/EurekaServer/workspace/j-eureka/build-jenkins/j-eureka-2.7.4";
+#if [-d ${outputPath}]; then
+#  rm -rf ${outputPath}
+#fi
+if exist ${outputPath} (
   rm -rf ${outputPath}
-fi
+)
+
 mkdir ${outputPath} && mkdir ${outputPath}/jar
-cp ./../target/*.jar ${outputPath}/jar/app.jar
+cp ./j-eureka/target/*.jar ${outputPath}/jar/app.jar
 # 将整个目录复制到应用目录中
 cd ${scriptPath}
 cp -rf ${outputPath} ${appHome}/
 #停止删除现有容器
 echo "停止删除容器:${dockerName}"
-docker stop ${dockerName}&& docker rm ${dockerName}
+
+#docker stop ${dockerName}&& docker rm ${dockerName}
 #Docker容器运行命令
 echo "运行容器"
-docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}/jar:/jar microserv/openjdk:1.0.0
-
+#docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${dockerJarVolumn}/jar:/jar microserv/openjdk:1.0.0
 exit 0
