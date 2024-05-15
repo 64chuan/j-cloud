@@ -1,0 +1,42 @@
+version: "3"
+services:
+  eurekadocker:
+    image: j-eureka:1.0
+    ports:
+      - "8088"
+    networks:
+      - mynetwork
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+ 
+  providerdocker:
+    image: j-provider1.0:latest
+    ports:
+      - "8877"
+    networks:
+      - mynetwork
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+        
+  mysqldb:
+    image: mysql:5.7
+    networks:
+      - mynetwork
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+        
+networks:
+  mynetwork:
+
+ #docker-compose -f docker-compose.yaml up -d
