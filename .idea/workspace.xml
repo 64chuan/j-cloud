@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc2aa56-9ac6-4dd7-97d0-85601e68f35f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/j-config-server/build-jenkins/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j-stream/build-jenkins/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-config-server/build-jenkins/build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/src/build-jenkins/build" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/j-config-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/j-config-server/build-jenkins" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,11 +70,11 @@
       <recent name="org.example" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\untitled\j-config-server" />
+      <recent name="D:\IdeaProjects\untitled\j-config-server\build-jenkins" />
       <recent name="D:\IdeaProjects\untitled\j-stream\src\build-jenkins" />
+      <recent name="D:\IdeaProjects\untitled\j-config-server" />
       <recent name="D:\IdeaProjects\untitled\j-provider1\src\main\java\org\example\listener" />
       <recent name="D:\IdeaProjects\untitled\j-provider1\src\main\java\org\example\redis" />
-      <recent name="D:\IdeaProjects\untitled\j-stream\src\main\java\org\example\dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.dto" />
@@ -79,6 +83,7 @@
       <recent name="example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\untitled\j-stream" />
       <recent name="D:\IdeaProjects\untitled\j-provider1\docker" />
       <recent name="D:\IdeaProjects\untitled\j-eureka\src\main\docker" />
     </key>
@@ -286,7 +291,7 @@
       <workItem from="1715646355326" duration="5435000" />
       <workItem from="1715733058248" duration="11789000" />
       <workItem from="1715819827964" duration="26077000" />
-      <workItem from="1715906304462" duration="9699000" />
+      <workItem from="1715906304462" duration="10388000" />
     </task>
     <task id="LOCAL-00001" summary="jb">
       <created>1715583426757</created>
