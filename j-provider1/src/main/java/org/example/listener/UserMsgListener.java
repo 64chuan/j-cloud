@@ -1,10 +1,8 @@
 package org.example.listener;
 
 import org.example.dto.UserMsg;
-import org.example.redis.UserRedisRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
@@ -12,9 +10,6 @@ import org.springframework.cloud.stream.messaging.Sink;
 @EnableBinding(Sink.class)
 public class UserMsgListener {
     protected Logger logger = LoggerFactory.getLogger(this.getClass());
-
-    @Autowired
-    protected UserRedisRepository userRedisRepository;
 
     @StreamListener(Sink.INPUT)
     public void onUserMsgSink(UserMsg userMsg){

@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc2aa56-9ac6-4dd7-97d0-85601e68f35f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/dto/UserMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/listener/SpringCloudBookChannels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/listener/UserMsgListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/redis/UserRedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/StreamApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/controller/StreamSvController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/dto/UserMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/feign/IUserRemoteClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/redis/UserRedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/utils/UserMsgSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j-stream/src/test/java/org/example/StreamSvControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-consumer-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j-consumer-feign/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-consumer-feign/src/main/java/com/example/service/IFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/j-consumer-feign/src/main/java/com/example/service/IFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-eureka/build-jenkins/build" beforeDir="false" afterPath="$PROJECT_DIR$/j-eureka/build-jenkins/build" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-eureka/src/main/docker/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/j-eureka/src/main/docker/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/ProviderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j-stream/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/listener/UserMsgListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/java/org/example/listener/UserMsgListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/j-provider1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/j-provider1/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/ProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/ProviderApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/dto/MyAnnottation.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/dto/MyAnnottation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/dto/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/dto/UserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/service/AnnotationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/service/AnnotationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/service/UserRetryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/service/UserRetryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/org/example/listener/UserMsgListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/org/example/listener/UserMsgListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +93,7 @@
       <recent name="D:\IdeaProjects\untitled\j-eureka\src\main\docker" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StreamApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigApplication">
     <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="j-config-server" />
       <extension name="coverage">
@@ -280,9 +254,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigApplication" />
         <item itemvalue="Spring Boot.StreamApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
-        <item itemvalue="Spring Boot.ConfigApplication" />
         <item itemvalue="Spring Boot.HystrixApplication" />
         <item itemvalue="Spring Boot.FeignApplication" />
       </list>
@@ -322,7 +296,7 @@
       <workItem from="1715646355326" duration="5435000" />
       <workItem from="1715733058248" duration="11789000" />
       <workItem from="1715819827964" duration="26077000" />
-      <workItem from="1715906304462" duration="2868000" />
+      <workItem from="1715906304462" duration="7579000" />
     </task>
     <task id="LOCAL-00001" summary="jb">
       <created>1715583426757</created>
@@ -459,38 +433,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1715823522806" />
-    <state width="1877" height="369" key="GridCell.Tab.0.bottom" timestamp="1715909644538">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644538" />
-    <state width="1877" height="369" key="GridCell.Tab.0.center" timestamp="1715909644538">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.0.center" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644538" />
-    <state width="1877" height="369" key="GridCell.Tab.0.left" timestamp="1715909644538">
+    <state width="1877" height="400" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.0.left" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644538" />
-    <state width="1877" height="369" key="GridCell.Tab.0.right" timestamp="1715909644538">
+    <state width="1877" height="400" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644538" />
-    <state width="1877" height="369" key="GridCell.Tab.1.bottom" timestamp="1715909644539">
+    <state width="1877" height="400" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.1.bottom" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644539" />
-    <state width="1877" height="369" key="GridCell.Tab.1.center" timestamp="1715909644539">
+    <state width="1877" height="400" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.1.center" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644539" />
-    <state width="1877" height="369" key="GridCell.Tab.1.left" timestamp="1715909644539">
+    <state width="1877" height="400" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.1.left" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644539" />
-    <state width="1877" height="369" key="GridCell.Tab.1.right" timestamp="1715909644539">
+    <state width="1877" height="400" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
+    <state width="1877" height="400" key="GridCell.Tab.1.right" timestamp="1715914219328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="369" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715909644539" />
+    <state width="1877" height="400" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715914219328" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1715853562554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -563,5 +537,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="195" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1714285464126" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/j-provider1/src/main/java/org/example/listener/UserMsgListener.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

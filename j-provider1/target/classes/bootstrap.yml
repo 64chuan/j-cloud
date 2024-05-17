@@ -17,14 +17,14 @@ spring:
           brokers: 0.0.0.0:9092
           zk-nodes: 0.0.0.0:2181
         bindings:
+          input:
+            destination: usertopic
+            content-type: application/json
+            group: productGroup
           #inboundUserMsg:
           #  destination: usertopic
           #  content-type: application/json
           #  group: productGroup
-          intput:
-            destination: usertopic
-            content-type: application/json
-            group: productGroup
 
 #  cloud:
 #    config:
@@ -32,12 +32,13 @@ spring:
 #      name: application
 #      uri: http://configserver
 
+
 eureka:
   client:
     service-url:
       defaultZone: http://lsc:123456@127.0.0.1:8088/eureka
-    instance:
-      instance-id: j-provider1
+  instance:
+    instance-id: j-provider1
 logging:
   level:
     root: INFO
