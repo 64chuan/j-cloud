@@ -6,12 +6,14 @@ docker stop stream.1.5.4
 docker rm -f stream.1.5.4
 docker rmi stream.1.5.4:latest
 
-copy j-eureka/build-jenkins/Dockerfile j-eureka/target/Dockerfile
-cd j-eureka/target
+cd j-eureka/build-jenkins
+copy Dockerfile ../target/Dockerfile
+copy Dockerfile ../../j-config/target/Dockerfile
+
+cd ../target
 docker build -t j-eureka-2.7.4 . && docker run -p 8088:8088 -v D:\Docker\Users\logs:/logs --name eurekadocker.2.7.4 -d --privileged --network my-network j-eureka-2.7.4
 
 cd ../../j-config-server/target
-copy j-eureka/build-jenkins/Dockerfile j-config/target/Dockerfile
 docker build -t j-config . && docker run -p 8888:8888 -v D:\Docker\Users\logs:/logs --name j-config -d --privileged --network my-network j-config
 
 cd ../../j-stream/target
