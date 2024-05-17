@@ -26,6 +26,10 @@ docker build -t j-config . && docker run -p 8888:8888 -v D:\Docker\Users\logs:/l
 #cd target
 #docker build -t j-stream . && docker run -p 8686:8686 -v D:\Docker\Users\logs:/logs --name streamdocker -d --privileged --network my-network  --link zookeeper:zookeeper j-stream
 
+#provider1
+docker stop provider1docker
+docker rm -f provider1docker
+docker rmi j-provider1:latest
 cd ../../j-provider1
 copy build-jenkins/Dockerfile target/Dockerfile
 cd target
