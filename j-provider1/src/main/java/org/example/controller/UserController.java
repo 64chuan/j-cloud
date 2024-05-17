@@ -1,12 +1,11 @@
 package org.example.controller;
 
+import org.example.dto.UserDto;
 import org.example.service.AnnotationService;
 import org.example.service.UserRetryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/user")
 @RestController
@@ -64,5 +63,19 @@ public class UserController {
     @RequestMapping(value="/helloPort")
     public String helloPort(){
         return " Hello server port：" + serverPort;
+    }
+
+    /**
+     * 获取用户详情
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/loadUser/{id}", method = RequestMethod.GET)
+    public UserDto detail(@PathVariable Long id){
+        UserDto userDto = new UserDto();
+        userDto.setId(id);
+        userDto.setAvatar("hhh");
+        userDto.setNickname("Hello! Hello!");
+        return userDto;
     }
 }

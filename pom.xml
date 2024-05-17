@@ -28,5 +28,6 @@
         <module>j-hystrix</module>
         <module>jzuul</module>
         <module>j-config-server</module>
+        <module>j-stream</module>
     </modules>
 </project>

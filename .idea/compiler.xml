@@ -14,6 +14,7 @@
         <module name="j-eureka" />
         <module name="j-consumer-feign" />
         <module name="j-hystrix" />
+        <module name="j-stream" />
         <module name="j-config-server" />
       </profile>
     </annotationProcessing>
@@ -28,8 +29,9 @@
       <module name="j-config-server" options="-parameters" />
       <module name="j-consumer" options="-parameters" />
       <module name="j-eureka" options="-parameters" />
-      <module name="j-provider1" options="-parameters" />
+      <module name="j-provider1" options="" />
       <module name="j-provider2" options="-parameters" />
+      <module name="j-stream" options="" />
       <module name="j-zool" options="-parameters" />
       <module name="jzuul" options="-parameters" />
     </option>

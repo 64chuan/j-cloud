@@ -14,7 +14,9 @@ VOLUME /tmp
 ADD *.jar app.jar
 
 #启动容器时的进程
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar","--spring.profiles.active=prod"]
+ENTRYPOINT ["java","-jar","/app.jar"]
 
 #暴露8081端口
 EXPOSE 8081
+
+#执行文件

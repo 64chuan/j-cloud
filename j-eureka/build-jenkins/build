@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#这里是unix环境命令脚本，window不能执行
+
 #进入脚本所在目录，然后返回项目根目录
 #scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 scriptPath="${scriptPath}/j-eureka/build-jenkins"
