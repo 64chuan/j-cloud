@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#这里是unix环境命令脚本，window不能执行
+
+#进入脚本所在目录，然后返回项目根目录
+#scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+scriptPath="${scriptPath}/j-eureka/build-jenkins"
+cd $scriptPath
+cd ../../
+
+echo "脚本所在目录:${scriptPath}"
+
+#Docker容器基本信息
+dockerName="j-eureka-2.7.4"
+dockerPort="8088"
+dockerJarVolumn="${scriptPath}/j-eureka/target/j-eureka-2.7.4"
+
+#将Jar 包复制到目录下
+
+cp ${dockerJarVolumn}.jar ${scriptPath}/app.jar
+
+docker stop ${dockerName} && docker rm ${dockerName}
+#Docker容器运行命令
+#echo "运行容器"
+#docker run --name=${dockerName} -d -p ${dockerPort}:${dockerPort} -v --network my-network ${scriptPath}/jar:/jar microserv/openjdk:1.0.0
+docker build -t ${dockerName} . && docker run -p 8088:8088 -v D:\Docker\Users\logs:/logs --name eurekadocker.2.7.4 -d --privileged --network my-network ${dockerName}
+
