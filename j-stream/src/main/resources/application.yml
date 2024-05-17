@@ -17,8 +17,10 @@ spring:
           destination: usertopic
           content-type: application/json
       binder:
-        brokers: 0.0.0.0:9092
-        zk-nodes: 0.0.0.0:2181
+        brokers: kafka
+        zk-nodes: zookeeper
+        #brokers: 0.0.0.0:9092
+        #zk-nodes: 0.0.0.0:2181
 
 logging:
   level:
