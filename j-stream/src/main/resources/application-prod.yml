@@ -1,0 +1,32 @@
+server:
+  port: 8686
+
+spring:
+  application:
+    name: stream-server
+  redis:
+    host: myredis
+    port: 6379
+    password:
+    database: 0
+    connect-timeout: 60
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: usertopic
+          content-type: application/json
+      binder:
+        brokers: kafka:9092
+        zk-nodes: zookeeper:2181
+
+logging:
+  level:
+    root: INFO
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lsc:123456@eurekadocker:8088/eureka
+  instance:
+    instance-id: stream-server

@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc2aa56-9ac6-4dd7-97d0-85601e68f35f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/j-stream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j-provider1/src/main/resources/applecation-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j-stream/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-provider1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-provider1/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-provider1/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/build-jenkins/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/build-jenkins/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/src/main/java/org/example/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/src/main/java/org/example/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/target/classes/org/example/redis/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/target/classes/org/example/redis/RedisConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/j-config-server/build-jenkins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/j-stream/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,11 +76,11 @@
       <recent name="org.example" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\untitled\j-stream\src\main\resources" />
       <recent name="D:\IdeaProjects\untitled\j-config-server\build-jenkins" />
       <recent name="D:\IdeaProjects\untitled\j-stream\src\build-jenkins" />
       <recent name="D:\IdeaProjects\untitled\j-config-server" />
       <recent name="D:\IdeaProjects\untitled\j-provider1\src\main\java\org\example\listener" />
-      <recent name="D:\IdeaProjects\untitled\j-provider1\src\main\java\org\example\redis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.dto" />
@@ -84,7 +94,7 @@
       <recent name="D:\IdeaProjects\untitled\j-eureka\src\main\docker" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StreamApplication">
+  <component name="RunManager" selected="Spring Boot.ProviderApplication">
     <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="j-config-server" />
       <extension name="coverage">
@@ -287,7 +297,7 @@
       <workItem from="1715646355326" duration="5435000" />
       <workItem from="1715733058248" duration="11789000" />
       <workItem from="1715819827964" duration="26077000" />
-      <workItem from="1715906304462" duration="14108000" />
+      <workItem from="1715906304462" duration="15361000" />
     </task>
     <task id="LOCAL-00001" summary="jb">
       <created>1715583426757</created>
@@ -424,38 +434,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1715823522806" />
-    <state width="1877" height="368" key="GridCell.Tab.0.bottom" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.0.bottom" timestamp="1715927602196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.0.center" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602196" />
+    <state width="1877" height="244" key="GridCell.Tab.0.center" timestamp="1715927602196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.0.left" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602196" />
+    <state width="1877" height="244" key="GridCell.Tab.0.left" timestamp="1715927602196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.0.right" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602196" />
+    <state width="1877" height="244" key="GridCell.Tab.0.right" timestamp="1715927602196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.1.bottom" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602196" />
+    <state width="1877" height="244" key="GridCell.Tab.1.bottom" timestamp="1715927602197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.1.center" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602197" />
+    <state width="1877" height="244" key="GridCell.Tab.1.center" timestamp="1715927602197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.1.left" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602197" />
+    <state width="1877" height="244" key="GridCell.Tab.1.left" timestamp="1715927602197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
-    <state width="1877" height="368" key="GridCell.Tab.1.right" timestamp="1715925420322">
+    <state width="1877" height="244" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602197" />
+    <state width="1877" height="244" key="GridCell.Tab.1.right" timestamp="1715927602197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715925420322" />
+    <state width="1877" height="244" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1715927602197" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1715853562554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -520,10 +530,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="279" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1715761981940" />
-    <state x="623" y="225" width="1279" height="678" key="search.everywhere.popup" timestamp="1715847828666">
+    <state x="623" y="225" width="1279" height="678" key="search.everywhere.popup" timestamp="1715927271660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="1279" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1715847828666" />
+    <state x="623" y="225" width="1279" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1715927271660" />
     <state x="760" y="195" key="spring file set editor" timestamp="1714285464126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

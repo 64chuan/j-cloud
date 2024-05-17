@@ -14,7 +14,7 @@ VOLUME /tmp
 ADD *.jar stream1234.jar
 
 #启动容器时的进程
-ENTRYPOINT ["java","-jar","/stream1234.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/stream1234.jar","--spring.profiles.active=prod"]
 
 #暴露8081端口
 #EXPOSE 8081

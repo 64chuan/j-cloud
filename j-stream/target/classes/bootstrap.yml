@@ -1,6 +1,7 @@
 eureka:
   client:
     service-url:
+      #defaultZone: http://lsc:123456@eurekadocker:8088/eureka
       defaultZone: http://lsc:123456@127.0.0.1:8088/eureka
   instance:
     instance-id: stream-server
