@@ -23,4 +23,4 @@ docker build -t j-config . && docker run -p 8888:8888 -v D:\Docker\Users\logs:/l
 cd ../../j-stream
 copy build-jenkins/Dockerfile target/Dockerfile
 cd target
-docker build -t j-stream . && docker run -p 8686:8686 -v D:\Docker\Users\logs:/logs --name streamdocker -d --privileged --network my-network j-stream
+docker build -t j-stream . && docker run -p 8686:8686 -v D:\Docker\Users\logs:/logs --name streamdocker -d --privileged --network my-network  --link zookeeper:zookeeper j-stream
