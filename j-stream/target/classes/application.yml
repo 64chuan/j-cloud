@@ -5,6 +5,7 @@ spring:
   application:
     name: stream-server
   redis:
+    #host: myredis
     host: 127.0.0.1
     port: 6379
     password:
@@ -17,6 +18,8 @@ spring:
           destination: usertopic
           content-type: application/json
       binder:
+        #brokers: kafka
+        #zk-nodes: zookeeper
         brokers: 0.0.0.0:9092
         zk-nodes: 0.0.0.0:2181
 
