@@ -20,7 +20,13 @@ copy build-jenkins/Dockerfile target/Dockerfile
 cd target
 docker build -t j-config . && docker run -p 8888:8888 -v D:\Docker\Users\logs:/logs --name configdocker -d --privileged --network my-network j-config
 
-cd ../../j-stream
+#无法注册zookeeper
+#cd ../../j-stream
+#copy build-jenkins/Dockerfile target/Dockerfile
+#cd target
+#docker build -t j-stream . && docker run -p 8686:8686 -v D:\Docker\Users\logs:/logs --name streamdocker -d --privileged --network my-network  --link zookeeper:zookeeper j-stream
+
+cd ../../j-provider1
 copy build-jenkins/Dockerfile target/Dockerfile
 cd target
-docker build -t j-stream . && docker run -p 8686:8686 -v D:\Docker\Users\logs:/logs --name streamdocker -d --privileged --network my-network  --link zookeeper:zookeeper j-stream
+docker build -t j-provider1 . && docker run -p 8585:8585 -v D:\Docker\Users\logs:/logs --name provider1docker -d --privileged --network my-network j-provider1
