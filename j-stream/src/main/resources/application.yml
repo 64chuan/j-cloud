@@ -12,6 +12,8 @@ spring:
     database: 0
     connect-timeout: 60
   cloud:
+    zookeeper:
+      connect-string: zookeeper:2181
     stream:
       bindings:
         output:

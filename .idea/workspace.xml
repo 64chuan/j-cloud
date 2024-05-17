@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cc2aa56-9ac6-4dd7-97d0-85601e68f35f" name="Default Changelist" comment="" />
+    <list default="true" id="4cc2aa56-9ac6-4dd7-97d0-85601e68f35f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/j-stream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-stream/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -285,7 +288,7 @@
       <workItem from="1715646355326" duration="5435000" />
       <workItem from="1715733058248" duration="11789000" />
       <workItem from="1715819827964" duration="26077000" />
-      <workItem from="1715906304462" duration="18048000" />
+      <workItem from="1715906304462" duration="18905000" />
     </task>
     <task id="LOCAL-00001" summary="jb">
       <created>1715583426757</created>
