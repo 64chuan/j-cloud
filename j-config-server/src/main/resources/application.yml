@@ -31,7 +31,7 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://lsc:123456@localhost:8088/eureka
+      defaultZone: http://lsc:123456@j-eureka-2.7.4:8088/eureka
 
 
 
