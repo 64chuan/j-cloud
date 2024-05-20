@@ -37,7 +37,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://lsc:123456@euerekadocker:8088/eureka
+      defaultZone: http://lsc:123456@eurekadocker:8088/eureka
   instance:
     instance-id: j-provider1
 logging:
