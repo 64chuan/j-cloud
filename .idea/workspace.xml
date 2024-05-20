@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc2aa56-9ac6-4dd7-97d0-85601e68f35f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j-provider1/src/main/resources/applecation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j-provider1/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,6 +288,8 @@
       <workItem from="1715733058248" duration="11789000" />
       <workItem from="1715819827964" duration="26077000" />
       <workItem from="1715906304462" duration="20680000" />
+      <workItem from="1715939603373" duration="399000" />
+      <workItem from="1716165746028" duration="1722000" />
     </task>
     <task id="LOCAL-00001" summary="jb">
       <created>1715583426757</created>
